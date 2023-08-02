@@ -1,15 +1,18 @@
 ﻿using System;
+using System.Collections.Generic;
 
-namespace ControleDeVersaoComGit
+namespace ControleDeVersaoComGit.Exercicios
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.WriteLine(DateTime.Now.ToLongDateString().ToUpper());
-            Console.WriteLine("Versão da aplicação: 1.0");
-
+            //Console.WriteLine(DateTime.Now.ToLongDateString().ToUpper());
+            var central = new CentralDeExercicios(new Dictionary<string, Action>()
+            {
+                {"Calculadora", Calculadora.Executar},
+            });
+            central.SelecionarEExecutar();
         }
     }
 }
