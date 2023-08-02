@@ -27,8 +27,6 @@ namespace ControleDeVersaoComGit {
             string nomeDoExercicio = Exercicios.ElementAt(num).Key;
 
             Console.Write("\nExecutando exercício ");
-            Console.BackgroundColor = ConsoleColor.Yellow;
-            Console.ForegroundColor = ConsoleColor.Black;
             Console.WriteLine(nomeDoExercicio);
             Console.ResetColor();
 
