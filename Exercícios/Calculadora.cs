@@ -42,6 +42,10 @@ namespace ControleDeVersaoComGit.Exercicios
                 Console.WriteLine($"Seu resultado é: " + (num1 / num2));
                 break;
 
+                case "0":
+                Console.WriteLine("Pressione Enter para finalizar.");
+                Console.ReadKey();
+                break;
             }
             
         }
